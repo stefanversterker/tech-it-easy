@@ -6,19 +6,17 @@ function App() {
             <header>
                 <h1>Tech it easy dashboard</h1>
             </header>
-
             <main>
                 <section>
                     <title>
                         <h2>Verkoopoverzicht</h2>
                     </title>
                     <div>
-                        <article></article>
+                        <article className="info-tile"></article>
                         <article></article>
                         <article></article>
                     </div>
                 </section>
-
                 <section>
                     <title>
                         <h2>Best verkochte tv</h2>
