@@ -47,20 +47,20 @@ function App() {
                     <div className="top-seller">
                         <div className="top-seller-image"></div>
                         <article>
-                            <div>
-                                <div id="product-title">DungBox2000</div>
+                            <div className="product-title-description">
+                                <div id="product-title">RetardBox2000</div>
                                 <div id="product-description">TeeVee</div>
                             </div>
-                            <div id="product-price">1000</div>
-                            <div id="product-available-sizes">43 inch | 50 inch | 55 inch | 58 inch</div>
-                            <div id="product-specs">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
+                                <div id="product-price">€1000,-</div>
+                                <div id="product-available-sizes">43 inch | 50 inch | 55 inch | 58 inch</div>
+                                <div id="product-specs">
+                                    <ul>
+                                        <li>wifi</li>
+                                        <li>speech</li>
+                                        <li>hdr</li>
+                                        <li>bluetooth</li>
+                                        <li>ambilight</li>
+                                    </ul>
                             </div>
                         </article>
                     </div>
