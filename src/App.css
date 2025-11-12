@@ -1,4 +1,51 @@
-.info-tile {
+.everything {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 100vh;
+    border: 3px dashed red;
+}
 
+.all-tiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+
+
+}
+
+.info-tile-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-tile {
+    width: 32%;
+    height: 25rem;
+    border-radius: 20px;
+}
+
+.green-tile {
+    background-color: rgba(0, 151, 0, 0.2);
+    border: 2px solid rgba(0, 151, 0, 1)
+}
+
+.blue-tile {
+    background-color: rgba(0, 83, 151, 0.2);
+    border: 2px solid rgb(0, 83, 151)
+}
+
+.red-tile {
+    background-color: rgba(151, 0, 0, 0.2);
+    border: 2px solid rgb(151, 0, 0)
+}
+
+.top-seller {
+    width: 100%;
+    height: 25rem;
+    border: 2px dashed black;
+    border-radius: 20px;
+    background-color: lightgray;
 }
 
