@@ -1,9 +1,13 @@
 import './App.css';
-import {inventory} from './constants/inventory.js';
+import {bestSellingTv, inventory} from './constants/inventory.js';
 import productsSold from './helpers/products-sold.js';
 import productsPurchased from './helpers/products-purchased.js';
 import productsStock from "./helpers/products-stock.js";
-
+import productTitle from "./helpers/product-name.js";
+import productPrice from "./helpers/product-price.js";
+import productSizes from "./helpers/product-sizes.js";
+import check from './assets/check.png';
+import not from './assets/minus.png'
 
 
 function App() {
@@ -51,22 +55,22 @@ function App() {
                 <section>
 
                     <div className="top-seller">
-                        <div className="top-seller-image"></div>
+                        <div className="top-seller-image"><img src="https://image.coolblue.nl/max/500x500/products/1786196" alt="tv"/></div>
                         <article>
-                            <div className="product-title-description">
-                                <div id="product-title">RetardBox2000</div>
-                                <div id="product-description">TeeVee</div>
-                            </div>
-                                <div id="product-price">€1000,-</div>
-                                <div id="product-available-sizes">43 inch | 50 inch | 55 inch | 58 inch</div>
-                                <div id="product-specs">
-                                    <ul>
-                                        <li>wifi</li>
-                                        <li>speech</li>
-                                        <li>hdr</li>
-                                        <li>bluetooth</li>
-                                        <li>ambilight</li>
-                                    </ul>
+                            <div>{productTitle(bestSellingTv)}</div>
+                            <div>{productPrice(bestSellingTv)}</div>
+                            <div>{productSizes(bestSellingTv)}</div>
+                            <div className="product-specs">
+                                <img className="icons" src={check} alt="check icon"/>
+                                <p>wifi</p>
+                                <img className="icons" src={not} alt="not-icon"/>
+                                <p>speech</p>
+                                <img className="icons" src={check} alt="check icon"/>
+                                <p>hdr</p>
+                                <img className="icons" src={check} alt="check icon"/>
+                                <p>bluetooth</p>
+                                <img className="icons" src={not} alt="not-icon"/>
+                                <p>ambilight</p>
                             </div>
                         </article>
                     </div>
@@ -75,4 +79,5 @@ function App() {
         </div>
     )
 }
+
 export default App
