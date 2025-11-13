@@ -40,7 +40,7 @@ function App() {
                                 <h2>Aantal te verkopen producten</h2>
                             </div>
                             <div>
-                                <h2>{productsStock()}</h2>
+                                <h2>{productsStock(inventory)}</h2>
                             </div>
                         </article>
                     </div>

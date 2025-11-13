@@ -1,10 +1,10 @@
-import {inventory} from '../constants/inventory.js';
-import productsSold from '/products-sold.js';
-import productsPurchased from '/products-purchased.js';
 
-
-function productsStock() {
-    return productsPurchased(inventory) - productsSold(inventory);
+function productsStock(array) {
+    let stock = 0;
+    for (let i = 0; i < array.length; i++) {
+        stock += array[i].originalStock - array[i].sold;
+    }
+    return stock;
 }
 
 export default productsStock;
