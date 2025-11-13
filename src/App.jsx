@@ -1,6 +1,10 @@
 import './App.css';
 import {inventory} from './constants/inventory.js';
-import productsSold from './constants/products-sold.js';
+import productsSold from './helpers/products-sold.js';
+import productsPurchased from './helpers/products-purchased.js';
+import productsStock from "./helpers/products-stock.js";
+
+
 
 function App() {
     return (
@@ -28,7 +32,7 @@ function App() {
                                 <h2>Aantal ingekochte producten</h2>
                             </div>
                             <div>
-                                <h2 id="products-purchased">73</h2>
+                                <h2>{productsPurchased(inventory)}</h2>
                             </div>
                         </article>
                         <article className="info-tile red-tile">
@@ -36,7 +40,7 @@ function App() {
                                 <h2>Aantal te verkopen producten</h2>
                             </div>
                             <div>
-                                <h2 id="products-stock">40</h2>
+                                <h2>{productsStock()}</h2>
                             </div>
                         </article>
                     </div>
@@ -71,5 +75,4 @@ function App() {
         </div>
     )
 }
-
 export default App
