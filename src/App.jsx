@@ -1,8 +1,6 @@
 import './App.css';
 import {inventory} from './constants/inventory.js';
-import {productsSold} from './constants/products-sold.js';
-
-productsSold(inventory,"products-sold")
+import productsSold from './constants/products-sold.js';
 
 function App() {
     return (
@@ -22,7 +20,7 @@ function App() {
                                 <h2>Aantal verkochte producten</h2>
                             </div>
                             <div>
-                                <h2 id="products-sold"></h2>
+                                <h2>{productsSold(inventory)}</h2>
                             </div>
                         </article>
                         <article className="info-tile blue-tile">

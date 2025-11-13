@@ -2,11 +2,11 @@
 
 let sales = 0
 
-function productsSold(array,id) {
+function productsSold(array) {
     for (let i = 0; i < array.length; i++) {
         sales += array[i].sold
     }
-    return document.getElementById(id).textContent= sales
+    return sales;
 }
 
 export default productsSold;
