@@ -9,11 +9,11 @@ import productSizes from "./helpers/product-sizes.js";
 import check from './assets/check.png';
 import not from './assets/minus.png'
 import {topSellerFirst, cheapestFirst, sportsFirst} from "./helpers/button-messages.js"
-import showOutcomeInConsole from '/constants/array-methods-practice.js'
+import showOutcomeInConsole from './constants/array-methods-practice.js'
 
 
 function App() {
-
+    showOutcomeInConsole();
     return (
 
         <div className="everything">
@@ -60,7 +60,8 @@ function App() {
 
                     <div className="top-seller">
                         <div className="top-seller-image-container">
-                            <img className="product-image" src="https://image.coolblue.nl/max/500x500/products/1786196" alt="tv"/>
+                            <img className="product-image" src="https://image.coolblue.nl/max/500x500/products/1786196"
+                                 alt="tv"/>
                         </div>
                         <article>
                             <div>{productTitle(bestSellingTv)}</div>
@@ -83,8 +84,10 @@ function App() {
                 </section>
                 <section className="sort-button-container">
                     <button className="sort-button" type="button" onClick={topSellerFirst}>Meest verkocht eerst</button>
-                    <button  className="sort-button" type="button" onClick={cheapestFirst}>Goedkoopste eerst</button>
-                    <button  className="sort-button" type="button" onClick={sportsFirst}>Meest geschikt voor sport eerst</button>
+                    <button className="sort-button" type="button" onClick={cheapestFirst}>Goedkoopste eerst</button>
+                    <button className="sort-button" type="button" onClick={sportsFirst}>Meest geschikt voor sport
+                        eerst
+                    </button>
                 </section>
             </main>
         </div>
