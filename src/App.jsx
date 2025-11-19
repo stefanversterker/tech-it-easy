@@ -8,10 +8,14 @@ import productPrice from "./helpers/product-price.js";
 import productSizes from "./helpers/product-sizes.js";
 import check from './assets/check.png';
 import not from './assets/minus.png'
+import {topSellerFirst, cheapestFirst, sportsFirst} from "./helpers/button-messages.js"
+import showOutcomeInConsole from '/constants/array-methods-practice.js'
 
 
 function App() {
+
     return (
+
         <div className="everything">
             <header>
                 <h1>Tech it easy dashboard</h1>
@@ -55,7 +59,9 @@ function App() {
                 <section>
 
                     <div className="top-seller">
-                        <div className="top-seller-image"><img src="https://image.coolblue.nl/max/500x500/products/1786196" alt="tv"/></div>
+                        <div className="top-seller-image-container">
+                            <img className="product-image" src="https://image.coolblue.nl/max/500x500/products/1786196" alt="tv"/>
+                        </div>
                         <article>
                             <div>{productTitle(bestSellingTv)}</div>
                             <div>{productPrice(bestSellingTv)}</div>
@@ -75,9 +81,15 @@ function App() {
                         </article>
                     </div>
                 </section>
+                <section className="sort-button-container">
+                    <button className="sort-button" type="button" onClick={topSellerFirst}>Meest verkocht eerst</button>
+                    <button  className="sort-button" type="button" onClick={cheapestFirst}>Goedkoopste eerst</button>
+                    <button  className="sort-button" type="button" onClick={sportsFirst}>Meest geschikt voor sport eerst</button>
+                </section>
             </main>
         </div>
     )
+
 }
 
 export default App
