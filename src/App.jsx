@@ -9,7 +9,7 @@ import productSizes from "./helpers/product-sizes.js";
 import check from './assets/check.png';
 import not from './assets/minus.png'
 import {topSellerFirst, cheapestFirst, sportsFirst} from "./helpers/button-messages.js"
-import showOutcomeInConsole from './constants/array-methods-practice.js'
+import showOutcomeInConsole from './constants/array-methods-practice.js';
 
 
 function App() {
