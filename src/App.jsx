@@ -10,6 +10,7 @@ import check from './assets/check.png';
 import not from './assets/minus.png'
 import {topSellerFirst, cheapestFirst, sportsFirst} from "./helpers/button-messages.js"
 import showOutcomeInConsole from './constants/array-methods-practice.js';
+import Product from "./components/Product.jsx";
 
 
 function App() {
@@ -58,7 +59,7 @@ function App() {
                 </div>
                 <section>
 
-                    <div className="top-seller">
+                    <div className="top-seller product-container">
                         <div className="top-seller-image-container">
                             <img className="product-image" src="https://image.coolblue.nl/max/500x500/products/1786196"
                                  alt="tv"/>
@@ -88,6 +89,9 @@ function App() {
                     <button className="sort-button" type="button" onClick={sportsFirst}>Meest geschikt voor sport
                         eerst
                     </button>
+                </section>
+                <section>
+                    {Product(inventory)}
                 </section>
             </main>
         </div>

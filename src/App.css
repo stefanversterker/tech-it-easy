@@ -53,16 +53,19 @@
     color: rgb(151, 0, 0);
 }
 
-.top-seller {
+.product-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 600px;
+    padding: 20px;
+}
+
+.top-seller {
     border: 2px dashed black;
     border-radius: 20px;
     background-color: lightgray;
-    padding: 20px;
 }
 
 .product-specs {
@@ -93,8 +96,14 @@
     margin-right: 5px;
 }
 
+.specs-list {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
 @media screen and (min-width: 900px) {
 
+    .product-container,
     .top-seller {
         flex-direction: row;
         height: 100%;
