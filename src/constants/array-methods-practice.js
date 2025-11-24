@@ -44,18 +44,6 @@ const bigTV = inventory.filter((product) => {
 
 // 1f
 
-/*function ambilightTV() {
-    const results = []
-    for (let i = 0; i < inventory.length; i++) {
-        if (inventory[i].options.at(-1).applicable === true) {
-            results.push(inventory[i])
-        }
-    }
-    return results;
-}*/
-
-// Mijn poging met array methods 💩
-
 const ambilightTV = inventory.filter((product) => {
     return product.options.some((option) => {
         if (option.name === "ambiLight" && option.applicable === true) {
@@ -125,7 +113,6 @@ function showOutcomeInConsole() {
     console.log(sortRefreshRate)
     console.log("bonus 1")
     console.log(sortBigTV)
-    console.log("bonus 2")
 }
 
 export default showOutcomeInConsole

@@ -1,13 +1,9 @@
 import productTitle from "../helpers/product-name.js";
 import productPrice from "../helpers/product-price.js";
 import productSizes from "../helpers/product-sizes.js";
-/*import imageSelect from "../helpers/product-image.js";*/
-/*import productOptions from "../helpers/product-specs.js"*/
 import check from "../assets/check.png";
 import minus from "../assets/minus.png";
-/*import {inventory} from "../constants/inventory.js";*/
 import out_of_stock from "../assets/out_of_stock.png"
-/*import not from "../assets/minus.png";*/
 
 function Product(array) {
     return (

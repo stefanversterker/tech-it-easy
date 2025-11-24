@@ -6,10 +6,6 @@ import productsStock from "./helpers/products-stock.js";
 import productTitle from "./helpers/product-name.js";
 import productPrice from "./helpers/product-price.js";
 import productSizes from "./helpers/product-sizes.js";
-/*import check from './assets/check.png';
-import not from './assets/minus.png';*/
-/*import out_of_stock from "./assets/out_of_stock.png";*/
-/*import {topSellerFirst, cheapestFirst, sportsFirst} from "./helpers/button-messages.js";*/
 import showOutcomeInConsole from './constants/array-methods-practice.js';
 import Product from "./components/Product.jsx";
 import {sortSales, sortPrice, sortRefreshRate, sortBigTV} from "./helpers/product-sorters.js";
