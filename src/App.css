@@ -78,6 +78,11 @@
     height: auto;
 }
 
+.sold-out-image {
+    width: 80%;
+    height: auto;
+}
+
 .top-seller-image-container {
     max-width: 500px;
     max-height: 335px;

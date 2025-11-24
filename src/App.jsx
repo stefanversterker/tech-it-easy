@@ -6,11 +6,14 @@ import productsStock from "./helpers/products-stock.js";
 import productTitle from "./helpers/product-name.js";
 import productPrice from "./helpers/product-price.js";
 import productSizes from "./helpers/product-sizes.js";
-import check from './assets/check.png';
-import not from './assets/minus.png'
-import {topSellerFirst, cheapestFirst, sportsFirst} from "./helpers/button-messages.js"
+/*import check from './assets/check.png';
+import not from './assets/minus.png';*/
+/*import out_of_stock from "./assets/out_of_stock.png";*/
+/*import {topSellerFirst, cheapestFirst, sportsFirst} from "./helpers/button-messages.js";*/
 import showOutcomeInConsole from './constants/array-methods-practice.js';
 import Product from "./components/Product.jsx";
+import {sortSales, sortPrice, sortRefreshRate, sortBigTV} from "./helpers/product-sorters.js";
+
 
 
 function App() {
@@ -68,26 +71,19 @@ function App() {
                             <div>{productTitle(bestSellingTv)}</div>
                             <div>{productPrice(bestSellingTv)}</div>
                             <div>{productSizes(bestSellingTv)}</div>
-                            <div className="product-specs">
-                                <img className="icons" src={check} alt="check icon"/>
-                                <p>wifi</p>
-                                <img className="icons" src={not} alt="not-icon"/>
-                                <p>speech</p>
-                                <img className="icons" src={check} alt="check icon"/>
-                                <p>hdr</p>
-                                <img className="icons" src={check} alt="check icon"/>
-                                <p>bluetooth</p>
-                                <img className="icons" src={not} alt="not-icon"/>
-                                <p>ambilight</p>
-                            </div>
                         </article>
                     </div>
                 </section>
                 <section className="sort-button-container">
-                    <button className="sort-button" type="button" onClick={topSellerFirst}>Meest verkocht eerst</button>
-                    <button className="sort-button" type="button" onClick={cheapestFirst}>Goedkoopste eerst</button>
-                    <button className="sort-button" type="button" onClick={sportsFirst}>Meest geschikt voor sport
+                    <button className="sort-button" type="button" onClick={sortSales}>Meest verkocht eerst</button>
+                    <button className="sort-button" type="button" onClick={sortPrice}>Goedkoopste eerst</button>
+                    <button className="sort-button" type="button" onClick={sortRefreshRate}>Meest geschikt voor sport
                         eerst
+                    </button>
+                    <button className="sort-button" type="button" onClick={sortRefreshRate}>Meest geschikt voor sport
+                        eerst
+                    </button>
+                    <button className="sort-button" type="button" onClick={sortBigTV}>Grootste scherm eerst
                     </button>
                 </section>
                 <section>
